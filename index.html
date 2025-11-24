@@ -10,11 +10,11 @@
 <body>
     <nav class="main-nav">
         <div class="nav-container">
-            <a class="logo" href="#">Edukanban</a>
+            <a class="logo" href="index.html">Edukanban</a>
             <ul class="nav-links">
-                <li><a href="#que-es">¿Qué es?</a></li>
-                <li><a href="#aula">En el Aula</a></li>
-                <li><a href="#herramientas">Herramientas</a></li>
+                <li><a href="index.html" class="active">Inicio</a></li>
+                <li><a href="implementacion.html">Cómo Implementarlo</a></li>
+                <li><a href="#autor">Sobre el Autor</a></li>
             </ul>
             <div class="burger">
                 <div class="line1"></div>
@@ -61,8 +61,36 @@
             </div>
         </section>
 
+        <!-- Tutorial Preview Section -->
+        <section id="tutorial" class="section-container">
+            <div class="text-content" style="text-align: center; margin-bottom: 3rem; max-width: 800px; margin-left: auto; margin-right: auto;">
+                <h2>¿Cómo llevarlo a cabo?</h2>
+                <p>Implementar Edukanban en tu aula es un proceso estructurado pero flexible. Aquí tienes los pasos fundamentales para comenzar.</p>
+            </div>
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <h3>Preparación</h3>
+                    <p>Configura el espacio físico o digital y define las columnas básicas del tablero.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <h3>Introducción</h3>
+                    <p>Presenta la metodología a los estudiantes y explícales el valor de visualizar su trabajo.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <h3>Rutina</h3>
+                    <p>Establece momentos diarios para revisar el tablero y mover las tareas completadas.</p>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 3rem;">
+                <a href="implementacion.html" class="cta-button">Ver Tutorial Completo</a>
+            </div>
+        </section>
+
         <!-- Tools Section -->
-        <section id="herramientas" class="section-container">
+        <section id="herramientas" class="section-container alternate-bg">
             <h2 class="section-title">Herramientas del Ecosistema</h2>
             <div class="cards-grid">
                 <div class="card">
@@ -82,6 +110,23 @@
                         <h3>Plataforma Digital</h3>
                         <p>Una potente aplicación diseñada para que estudiantes y directivos de colegios puedan dar seguimiento al progreso académico desde cualquier lugar, facilitando la gestión institucional.</p>
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Author Section -->
+        <section id="autor" class="section-container">
+            <div class="content-wrapper">
+                <div class="text-content">
+                    <h2>Sobre el Autor</h2>
+                    <h3>Bastián Chávez</h3>
+                    <p class="role">Docente e Ingeniero de Software</p>
+                    <p>Como profesor de programación en aulas y profesional de la tecnología, he diseñado Edukanban con una misión clara: transformar el sistema educativo actual.</p>
+                    <p>Mi objetivo es evolucionar la tradicional educación por objetivos hacia un sistema mucho más visual y accesible para todos. Busco modernizar las dinámicas de aprendizaje, haciendo que el progreso sea tangible y comprensible tanto para estudiantes como para educadores.</p>
+                </div>
+                <div class="image-content">
+                    <!-- Placeholder for Bastián's photo or a representative image -->
+                    <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Bastián Chávez - Docente">
                 </div>
             </div>
         </section>
