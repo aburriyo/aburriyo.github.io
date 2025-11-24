@@ -1,132 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio de Bastián Chávez</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Edukanban - Modernizando la Educación</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Bastián Chávez</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#about">Sobre mí</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#projects">Proyectos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contacto</a>
-                    </li>
-                </ul>
+    <nav class="main-nav">
+        <div class="nav-container">
+            <a class="logo" href="#">Edukanban</a>
+            <ul class="nav-links">
+                <li><a href="#que-es">¿Qué es?</a></li>
+                <li><a href="#aula">En el Aula</a></li>
+                <li><a href="#herramientas">Herramientas</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
             </div>
         </div>
     </nav>
 
-    <style>
-        .navbar-nav .nav-link {
-            transition: color 0.3s ease-in-out;
-        }
-
-        .navbar-nav .nav-link:hover {
-            color: #28a745;
-        }
-
-        .navbar-toggler {
-            transition: transform 0.3s ease-in-out;
-        }
-
-        .navbar-toggler.collapsed .navbar-toggler-icon {
-            transform: rotate(0deg);
-        }
-
-        .navbar-toggler:not(.collapsed) .navbar-toggler-icon {
-            transform: rotate(90deg);
-        }
-
-        @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap');
-
-        header h1 {
-            font-family: 'Roboto Slab', serif;
-            font-size: 3.5rem;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-        }
-    </style>
-
-    <header class="bg-dark text-white text-center py-5" style="background: url('https://png.pngtree.com/background/20210710/original/pngtree-programming-code-green-background-picture-image_990485.jpg') no-repeat center center/cover;">
-        <h1>Bastián Chávez</h1>
-        <p>Desarrollador Web | Diseñador</p>
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Edukanban</h1>
+            <p class="subtitle">Un sistema que apunta a modernizar la educación.</p>
+            <a href="#que-es" class="cta-button">Descubre Más</a>
+        </div>
     </header>
-    <main class="container my-5">
-        <section id="about" class="text-center">
-            <h2 class="text-success">Sobre mí</h2>
-            <p>Hola, soy Bastián Chávez, un apasionado desarrollador web con experiencia en crear soluciones modernas y eficientes.</p>
+
+    <main>
+        <!-- Intro Section -->
+        <section id="que-es" class="section-container">
+            <div class="content-wrapper">
+                <div class="text-content">
+                    <h2>¿Qué es Edukanban?</h2>
+                    <p>Edukanban es mucho más que una herramienta; es un sistema integral diseñado para <strong>modernizar la educación</strong>. Adaptando la probada metodología Kanban, utilizada mundialmente en la gestión de proyectos, Edukanban lleva la eficiencia y la claridad visual al entorno escolar.</p>
+                    <p>Su objetivo es transformar la experiencia educativa, proporcionando a profesores y estudiantes una estructura clara para visualizar el progreso, gestionar tareas y alcanzar objetivos de aprendizaje de manera colaborativa.</p>
+                </div>
+                <div class="image-content">
+                    <img src="https://images.unsplash.com/photo-1531403009284-440f080d1e12?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Concepto Edukanban - Planificación Estratégica">
+                </div>
+            </div>
         </section>
-        <section id="projects" class="mt-5">
-            <h2 class="text-success text-center">Proyectos</h2>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="https://picsum.photos/300/200?random=1" class="card-img-top" alt="Imagen Proyecto 1">
-                        <div class="card-body">
-                            <h5 class="card-title">Proyecto 1</h5>
-                            <p class="card-text">Descripción breve del proyecto.</p>
-                            <a href="Proyecto1/" class="btn btn-success">Ver Proyecto</a>
-                        </div>
+
+        <!-- Classroom Implementation -->
+        <section id="aula" class="section-container alternate-bg">
+            <div class="content-wrapper reverse">
+                <div class="text-content">
+                    <h2>Implementación en el Aula</h2>
+                    <p>Hoy en día, profesores innovadores están implementando Edukanban dentro de las salas de clases para lograr una <strong>mejor visualización de los objetivos</strong>. Esta metodología permite que lo abstracto se vuelva tangible.</p>
+                    <p>Al visualizar el flujo de trabajo de la clase, los estudiantes desarrollan habilidades de autogestión y responsabilidad. Los docentes pueden identificar rápidamente cuellos de botella en el aprendizaje y adaptar sus estrategias en tiempo real.</p>
+                </div>
+                <div class="image-content">
+                    <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Profesores y Alumnos en clase">
+                </div>
+            </div>
+        </section>
+
+        <!-- Tools Section -->
+        <section id="herramientas" class="section-container">
+            <h2 class="section-title">Herramientas del Ecosistema</h2>
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1531538606174-0f90ff5dce83?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Diario Mural Interactivo">
+                    </div>
+                    <div class="card-body">
+                        <h3>Diario Mural Interactivo</h3>
+                        <p>El corazón del aula. Un espacio físico donde los estudiantes interactúan diariamente con sus objetivos, moviendo tarjetas y visualizando el avance colectivo del curso.</p>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="https://picsum.photos/300/200?random=2" class="card-img-top" alt="Imagen Proyecto 2">
-                        <div class="card-body">
-                            <h5 class="card-title">Proyecto 2</h5>
-                            <p class="card-text">Descripción breve del proyecto.</p>
-                            <a href="Proyecto2/" class="btn btn-success">Ver Proyecto</a>
-                        </div>
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Plataforma Digital">
                     </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="https://picsum.photos/300/200?random=3" class="card-img-top" alt="Imagen Proyecto 3">
-                        <div class="card-body">
-                            <h5 class="card-title">Proyecto 3</h5>
-                            <p class="card-text">Descripción breve del proyecto.</p>
-                            <a href="Proyecto3/" class="btn btn-success">Ver Proyecto</a>
-                        </div>
+                    <div class="card-body">
+                        <h3>Plataforma Digital</h3>
+                        <p>Una potente aplicación diseñada para que estudiantes y directivos de colegios puedan dar seguimiento al progreso académico desde cualquier lugar, facilitando la gestión institucional.</p>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="contact" class="mt-5">
-            <h2 class="text-success text-center">Contacto</h2>
-            <form class="mt-4" action="https://formspree.io/f/{tu_correo}" method="POST">
-                <div class="mb-3">
-                    <label for="name" class="form-label">Nombre</label>
-                    <input type="text" class="form-control" id="name" name="name" placeholder="Tu nombre" required>
-                </div>
-                <div class="mb-3">
-                    <label for="email" class="form-label">Correo Electrónico</label>
-                    <input type="email" class="form-control" id="email" name="email" placeholder="Tu correo electrónico" required>
-                </div>
-                <div class="mb-3">
-                    <label for="message" class="form-label">Mensaje</label>
-                    <textarea class="form-control" id="message" name="message" rows="5" placeholder="Tu mensaje" required></textarea>
-                </div>
-                <button type="submit" class="btn btn-success">Enviar</button>
-            </form>
-        </section>
-    </main> 
-    <footer class="bg-dark text-white text-center py-3">
-        <p>&copy; 2025 Bastián Chávez. Todos los derechos reservados.</p>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <h4>Edukanban</h4>
+            <p>&copy; 2025 Edukanban. Todos los derechos reservados.</p>
+            <small>Modernizando la educación paso a paso.</small>
+        </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+
     <script src="script.js"></script>
 </body>
 </html>
