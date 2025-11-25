@@ -1,145 +1,196 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Edukanban - Modernizando la Educación</title>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <title>EduKanban | La Revolución Visual</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Patrick+Hand&family=Permanent+Marker&family=Rock+Salt&family=Shadows+Into+Light&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+    <!-- Background Texture (Paper Base) -->
+    <div class="paper-texture"></div>
+
     <nav class="main-nav">
-        <div class="nav-container">
-            <a class="logo" href="index.html">Edukanban</a>
-            <ul class="nav-links">
-                <li><a href="index.html" class="active">Inicio</a></li>
-                <li><a href="implementacion.html">Cómo Implementarlo</a></li>
-                <li><a href="#autor">Sobre el Autor</a></li>
-            </ul>
-            <div class="burger">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
+        <div class="container">
+            <div class="logo-sketch">
+                <span class="marker-text">EduKanban</span>
+                <div class="underline-doodle"></div>
             </div>
+            <ul class="nav-links">
+                <li><a href="#inicio" class="nav-item">Inicio</a></li>
+                <li><a href="#metodologia" class="nav-item">Metodología</a></li>
+                <li><a href="#herramientas" class="nav-item">Herramientas</a></li>
+                <li><a href="#autor" class="nav-item">Sobre Nosotros</a></li>
+            </ul>
         </div>
     </nav>
 
-    <header class="hero">
-        <div class="hero-content">
-            <h1>Edukanban</h1>
-            <p class="subtitle">Un sistema que apunta a modernizar la educación.</p>
-            <a href="#que-es" class="cta-button">Descubre Más</a>
+    <header id="inicio" class="hero-section">
+        <div class="container">
+            <div class="notebook-page">
+                <div class="holes"></div>
+                <div class="hero-content">
+                    <h1 class="hand-drawn-title">Visualiza. Organiza. Aprende.</h1>
+                    <p class="hand-drawn-subtitle">Transformando el aula con metodologías ágiles.</p>
+                    <div class="sticker-badge">
+                        <span>¡Nuevo!</span>
+                    </div>
+                    <a href="#metodologia" class="btn-sketch">Descubre Más -></a>
+                </div>
+            </div>
+            <!-- Decorative elements -->
+            <div class="pencil-decor"></div>
+            <div class="coffee-stain"></div>
         </div>
     </header>
 
-    <main>
-        <!-- Intro Section -->
-        <section id="que-es" class="section-container">
-            <div class="content-wrapper">
-                <div class="text-content">
-                    <h2>¿Qué es Edukanban?</h2>
-                    <p>Edukanban es mucho más que una herramienta; es un sistema integral diseñado para <strong>modernizar la educación</strong>. Adaptando la probada metodología Kanban, utilizada mundialmente en la gestión de proyectos, Edukanban lleva la eficiencia y la claridad visual al entorno escolar.</p>
-                    <p>Su objetivo es transformar la experiencia educativa, proporcionando a profesores y estudiantes una estructura clara para visualizar el progreso, gestionar tareas y alcanzar objetivos de aprendizaje de manera colaborativa.</p>
-                </div>
-                <div class="image-content">
-                    <img src="https://images.unsplash.com/photo-1531403009284-440f080d1e12?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Concepto Edukanban - Planificación Estratégica">
-                </div>
-            </div>
-        </section>
+    <!-- Whiteboard Section: Methodology -->
+    <section id="metodologia" class="whiteboard-section">
+        <div class="whiteboard-frame">
+            <div class="whiteboard-surface">
+                <div class="marker-tray"></div>
+                <div class="container">
+                    <h2 class="marker-title">¿Qué es EduKanban?</h2>
+                    <div class="grid-2-col">
+                        <div class="text-block">
+                            <h3 class="marker-subtitle">El Origen: Kanban</h3>
+                            <p class="marker-body"><strong>Kanban</strong> (del japonés "tarjeta visual") nació en los
+                                años 40 en Toyota para optimizar la producción. Hoy es un estándar mundial en gestión
+                                ágil.</p>
 
-        <!-- Classroom Implementation -->
-        <section id="aula" class="section-container alternate-bg">
-            <div class="content-wrapper reverse">
-                <div class="text-content">
-                    <h2>Implementación en el Aula</h2>
-                    <p>Hoy en día, profesores innovadores están implementando Edukanban dentro de las salas de clases para lograr una <strong>mejor visualización de los objetivos</strong>. Esta metodología permite que lo abstracto se vuelva tangible.</p>
-                    <p>Al visualizar el flujo de trabajo de la clase, los estudiantes desarrollan habilidades de autogestión y responsabilidad. Los docentes pueden identificar rápidamente cuellos de botella en el aprendizaje y adaptar sus estrategias en tiempo real.</p>
-                </div>
-                <div class="image-content">
-                    <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Profesores y Alumnos en clase">
-                </div>
-            </div>
-        </section>
+                            <h3 class="marker-subtitle">La Metodología</h3>
+                            <p class="marker-body">Se basa en <strong>visualizar el trabajo</strong>, limitar el trabajo
+                                en curso y maximizar la eficiencia. En el aula, esto transforma lo abstracto en
+                                tangible.</p>
 
-        <!-- Tutorial Preview Section -->
-        <section id="tutorial" class="section-container">
-            <div class="text-content" style="text-align: center; margin-bottom: 3rem; max-width: 800px; margin-left: auto; margin-right: auto;">
-                <h2>¿Cómo llevarlo a cabo?</h2>
-                <p>Implementar Edukanban en tu aula es un proceso estructurado pero flexible. Aquí tienes los pasos fundamentales para comenzar.</p>
-            </div>
-            <div class="steps-grid">
-                <div class="step-card">
-                    <div class="step-number">1</div>
-                    <h3>Preparación</h3>
-                    <p>Configura el espacio físico o digital y define las columnas básicas del tablero.</p>
+                            <h3 class="marker-subtitle">Nuestra Visión</h3>
+                            <p class="marker-body">Aunque existen herramientas de gestión, <strong>EduKanban</strong>
+                                busca algo diferente: crear una aplicación diseñada específicamente para el <strong>uso
+                                    directo en el aula</strong>, facilitando la interacción real entre profesores y
+                                alumnos.</p>
+                        </div>
+                        <div class="sketch-illustration">
+                            <!-- CSS Drawing of a Kanban Board -->
+                            <div class="mini-kanban">
+                                <div class="col">
+                                    <div class="col-head">Por Hacer</div>
+                                    <div class="note pink">Investigar</div>
+                                    <div class="note yellow">Leer</div>
+                                </div>
+                                <div class="col">
+                                    <div class="col-head">En Curso</div>
+                                    <div class="note blue">Redactar</div>
+                                </div>
+                                <div class="col">
+                                    <div class="col-head">Hecho</div>
+                                    <div class="note green">Entregar</div>
+                                </div>
+                            </div>
+                            <p class="caption-sketch">"Visualizar para Aprender"</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="step-card">
-                    <div class="step-number">2</div>
-                    <h3>Introducción</h3>
-                    <p>Presenta la metodología a los estudiantes y explícales el valor de visualizar su trabajo.</p>
-                </div>
-                <div class="step-card">
-                    <div class="step-number">3</div>
-                    <h3>Rutina</h3>
-                    <p>Establece momentos diarios para revisar el tablero y mover las tareas completadas.</p>
-                </div>
             </div>
-            <div style="text-align: center; margin-top: 3rem;">
-                <a href="implementacion.html" class="cta-button">Ver Tutorial Completo</a>
-            </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Tools Section -->
-        <section id="herramientas" class="section-container alternate-bg">
-            <h2 class="section-title">Herramientas del Ecosistema</h2>
+    <!-- Corkboard Section: Tools & Steps -->
+    <section id="herramientas" class="corkboard-section">
+        <div class="cork-texture"></div>
+        <div class="container">
+            <h2 class="pinned-title">
+                <span class="paper-scrap">Herramientas & Pasos</span>
+                <div class="push-pin red"></div>
+            </h2>
+
             <div class="cards-grid">
-                <div class="card">
-                    <div class="card-image">
-                        <img src="https://images.unsplash.com/photo-1531538606174-0f90ff5dce83?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Diario Mural Interactivo">
+                <!-- Step 1 -->
+                <div class="polaroid-card rotate-left">
+                    <div class="pin-tack"></div>
+                    <div class="photo-area">
+                        <div class="number-doodle">1</div>
                     </div>
-                    <div class="card-body">
-                        <h3>Diario Mural Interactivo</h3>
-                        <p>El corazón del aula. Un espacio físico donde los estudiantes interactúan diariamente con sus objetivos, moviendo tarjetas y visualizando el avance colectivo del curso.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-image">
-                        <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Plataforma Digital">
-                    </div>
-                    <div class="card-body">
-                        <h3>Plataforma Digital</h3>
-                        <p>Una potente aplicación diseñada para que estudiantes y directivos de colegios puedan dar seguimiento al progreso académico desde cualquier lugar, facilitando la gestión institucional.</p>
+                    <div class="caption">
+                        <h3>Preparación</h3>
+                        <p>Configura el espacio y define columnas.</p>
                     </div>
                 </div>
-            </div>
-        </section>
 
-        <!-- Author Section -->
-        <section id="autor" class="section-container">
-            <div class="content-wrapper">
-                <div class="text-content">
-                    <h2>Sobre el Autor</h2>
-                    <h3>Bastián Chávez</h3>
-                    <p class="role">Docente e Ingeniero de Software</p>
-                    <p>Como profesor de programación en aulas y profesional de la tecnología, he diseñado Edukanban con una misión clara: transformar el sistema educativo actual.</p>
-                    <p>Mi objetivo es evolucionar la tradicional educación por objetivos hacia un sistema mucho más visual y accesible para todos. Busco modernizar las dinámicas de aprendizaje, haciendo que el progreso sea tangible y comprensible tanto para estudiantes como para educadores.</p>
+                <!-- Step 2 -->
+                <div class="polaroid-card rotate-right">
+                    <div class="pin-tack"></div>
+                    <div class="photo-area">
+                        <div class="number-doodle">2</div>
+                    </div>
+                    <div class="caption">
+                        <h3>Introducción</h3>
+                        <p>Presenta la metodología a la clase.</p>
+                    </div>
                 </div>
-                <div class="image-content">
-                    <!-- Placeholder for Bastián's photo or a representative image -->
-                    <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Bastián Chávez - Docente">
+
+                <!-- Step 3 -->
+                <div class="polaroid-card rotate-left">
+                    <div class="pin-tack"></div>
+                    <div class="photo-area">
+                        <div class="number-doodle">3</div>
+                    </div>
+                    <div class="caption">
+                        <h3>Rutina</h3>
+                        <p>Revisión diaria del tablero.</p>
+                    </div>
                 </div>
             </div>
-        </section>
-    </main>
+
+            <!-- Additional Tools Post-its -->
+            <div class="postit-container">
+                <div class="sticky-note yellow">
+                    <h3>Diario Mural</h3>
+                    <p>El corazón del aula. Interacción física diaria.</p>
+                </div>
+                <div class="sticky-note blue">
+                    <h3>Plataforma Digital</h3>
+                    <p>Seguimiento desde cualquier lugar.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Paper Section: Author -->
+    <section id="autor" class="author-section">
+        <div class="container">
+            <div class="id-badge-container">
+                <div class="lanyard"></div>
+                <div class="id-badge">
+                    <div class="hole-punch"></div>
+                    <div class="photo-placeholder">
+                        <div class="avatar-sketch">BC</div>
+                    </div>
+                    <div class="info">
+                        <h2 class="hand-drawn-name">Bastián Chávez</h2>
+                        <p class="role-stamp">DEV & DOCENTE</p>
+                        <p class="bio-text">"Soy un desarrollador de software y docente que busca llevar las mejores
+                            ideas de la industria tecnológica al mundo de la educación."</p>
+                    </div>
+                    <div class="barcode">|| ||| || |||</div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <footer>
-        <div class="footer-content">
-            <h4>Edukanban</h4>
-            <p>&copy; 2025 Edukanban. Todos los derechos reservados.</p>
-            <small>Modernizando la educación paso a paso.</small>
+        <div class="container">
+            <p class="footer-doodle">Hecho a mano con <span class="heart">♥</span> para EduKanban 2025</p>
         </div>
     </footer>
 
     <script src="script.js"></script>
 </body>
+
 </html>

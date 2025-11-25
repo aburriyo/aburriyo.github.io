@@ -1,0 +1,109 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{geometry}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{enumitem}
+
+\geometry{
+  left=2.5cm,
+  right=2.5cm,
+  top=3cm,
+  bottom=3cm
+}
+
+\title{\textbf{Especificación de Requerimientos del Sistema}\\ \Large Edukanban: Modernizando la Educación}
+\author{Bastián Chávez \\ Docente e Ingeniero de Software}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+\newpage
+
+\section{Introducción}
+Edukanban es un sistema diseñado para modernizar la gestión educativa mediante la visualización de objetivos de aprendizaje. Utilizando la metodología Kanban, busca transformar la abstracción curricular en un flujo de trabajo tangible y colaborativo dentro del aula. Este documento detalla los requerimientos funcionales y no funcionales, casos de uso y la arquitectura para la generación de objetivos.
+
+\section{Requerimientos del Sistema}
+
+\subsection{Requerimientos Funcionales}
+\begin{itemize}
+    \item \textbf{RF-01 Gestión de Usuarios:} El sistema debe permitir el registro y autenticación de tres roles principales: Docentes, Estudiantes y Directivos.
+    \item \textbf{RF-02 Gestión de Tableros:} Los docentes deben poder crear, editar y eliminar tableros Kanban digitales asociados a cursos o asignaturas específicas.
+    \item \textbf{RF-03 Gestión de Tarjetas (Objetivos):} 
+    \begin{itemize}
+        \item Creación de tarjetas con título, descripción, fecha límite y asignados.
+        \item Movimiento de tarjetas entre columnas (Por hacer, En proceso, Bloqueado, Hecho).
+    \end{itemize}
+    \item \textbf{RF-04 Visualización de Progreso:} El sistema debe generar gráficos y métricas sobre el avance del curso y el desempeño individual.
+    \item \textbf{RF-05 Diario Mural Digital:} Interfaz simplificada para proyección en el aula (modo "Kiosco").
+    \item \textbf{RF-06 Integración de Objetivos:} Módulo para importar o generar objetivos de aprendizaje (ver Sección \ref{sec:objetivos}).
+\end{itemize}
+
+\subsection{Requerimientos No Funcionales}
+\begin{itemize}
+    \item \textbf{RNF-01 Usabilidad:} La interfaz debe ser intuitiva para usuarios desde 8 años en adelante (Estudiantes de educación básica).
+    \item \textbf{RNF-02 Disponibilidad:} El sistema debe estar disponible 99.9\% del tiempo durante horario escolar.
+    \item \textbf{RNF-03 Compatibilidad:} Debe ser accesible vía navegadores web modernos y dispositivos móviles (Responsive Design).
+    \item \textbf{RNF-04 Seguridad:} Los datos de los menores de edad deben estar encriptados y cumplir con normativas de privacidad educativa.
+\end{itemize}
+
+\section{Casos de Uso Principales}
+
+\subsection{CU-01: Configuración del Aula (Docente)}
+\textbf{Actor:} Docente \\
+\textbf{Descripción:} El docente configura un nuevo tablero para el semestre.
+\begin{enumerate}
+    \item El docente inicia sesión y selecciona "Nuevo Curso".
+    \item Define el nombre del curso y selecciona la plantilla "Edukanban Estándar".
+    \item El sistema genera las columnas predeterminadas.
+    \item El docente invita a los estudiantes mediante un código o correo.
+\end{enumerate}
+
+\subsection{CU-02: Actualización de Estado (Estudiante)}
+\textbf{Actor:} Estudiante \\
+\textbf{Descripción:} Un estudiante marca una tarea como completada.
+\begin{enumerate}
+    \item El estudiante accede al tablero desde su dispositivo o el diario mural.
+    \item Localiza su tarjeta de objetivo asignada.
+    \item Arrastra la tarjeta a la columna "Hecho".
+    \item El sistema registra la fecha y hora de finalización y actualiza la barra de progreso personal.
+\end{enumerate}
+
+\section{Sistema de Gestión de Objetivos}
+\label{sec:objetivos}
+
+El núcleo de Edukanban es la gestión de objetivos de aprendizaje. Se proponen dos mecanismos para poblar los tableros.
+
+\subsection{Obtención Directa (Manual/Importación)}
+Este método permite a los docentes tener control total sobre el contenido curricular.
+\begin{itemize}
+    \item \textbf{Entrada Manual:} Formulario para ingresar objetivos específicos.
+    \item \textbf{Importación Curricular:} Carga de archivos (CSV/Excel) con planes de estudio oficiales (ej. Mineduc).
+    \item \textbf{Banco de Objetivos:} Selección desde una base de datos pre-cargada de objetivos estandarizados por nivel y asignatura.
+\end{itemize}
+
+\subsection{Generación vía LLMs (Inteligencia Artificial)}
+Un asistente inteligente para ayudar al docente a desglosar objetivos complejos en tareas manejables.
+
+\subsubsection{Flujo de Trabajo}
+\begin{enumerate}
+    \item \textbf{Input del Docente:} El docente ingresa un "Objetivo de Aprendizaje General" (ej. "Comprender el ciclo del agua").
+    \item \textbf{Procesamiento LLM:} El sistema envía un prompt estructurado a un modelo de lenguaje (ej. GPT-4, Claude, Gemini).
+    \begin{quote}
+        \textit{"Actúa como un experto pedagogo. Desglosa el objetivo '[OBJETIVO]' para estudiantes de [NIVEL] en 5 tareas pequeñas, accionables y verificables para un tablero Kanban. Formato JSON."}
+    \end{quote}
+    \item \textbf{Validación:} El sistema presenta las tareas sugeridas al docente.
+    \item \textbf{Edición y Aprobación:} El docente puede modificar, aceptar o rechazar las sugerencias antes de que se conviertan en tarjetas en el tablero.
+\end{enumerate}
+
+\subsubsection{Beneficios}
+\begin{itemize}
+    \item Ahorro de tiempo en la planificación.
+    \item Estandarización de la granularidad de las tareas.
+    \item Adaptación creativa de contenidos curriculares áridos a actividades dinámicas.
+\end{itemize}
+
+\end{document}

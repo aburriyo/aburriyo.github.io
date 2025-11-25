@@ -1,0 +1,13 @@
+\babel@toc {spanish}{}\relax 
+\contentsline {section}{\numberline {1}Introducción}{2}{section.1}%
+\contentsline {section}{\numberline {2}Requerimientos del Sistema}{2}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Requerimientos Funcionales}{2}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Requerimientos No Funcionales}{2}{subsection.2.2}%
+\contentsline {section}{\numberline {3}Casos de Uso Principales}{2}{section.3}%
+\contentsline {subsection}{\numberline {3.1}CU-01: Configuración del Aula (Docente)}{2}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}CU-02: Actualización de Estado (Estudiante)}{3}{subsection.3.2}%
+\contentsline {section}{\numberline {4}Sistema de Gestión de Objetivos}{3}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Obtención Directa (Manual/Importación)}{3}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Generación vía LLMs (Inteligencia Artificial)}{3}{subsection.4.2}%
+\contentsline {subsubsection}{\numberline {4.2.1}Flujo de Trabajo}{3}{subsubsection.4.2.1}%
+\contentsline {subsubsection}{\numberline {4.2.2}Beneficios}{4}{subsubsection.4.2.2}%
