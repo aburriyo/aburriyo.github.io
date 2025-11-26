@@ -772,11 +772,63 @@ footer {
     width: 100%;
 }
 
+/* --- Mobile Responsiveness --- */
 @media (max-width: 768px) {
+
+    /* Navigation */
+    .main-nav .container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+        width: 100%;
+    }
+
+    /* Hero */
+    .hero-section {
+        padding: 2rem 0;
+        min-height: auto;
+    }
+
+    .notebook-page {
+        padding: 2rem 1.5rem 2rem 2.5rem;
+        /* Less padding, keep left for holes */
+        width: 95%;
+    }
+
+    .hand-drawn-title {
+        font-size: 2rem;
+    }
+
+    /* Grids */
+    .grid-2-col {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    /* Corkboard */
+    .paper-scrap {
+        font-size: 1.5rem;
+        padding: 1rem;
+    }
+
+    /* Postcard */
+    .postcard {
+        width: 100%;
+        min-height: auto;
+        transform: rotate(0);
+        margin: 0;
+    }
+
     .postcard-content {
         flex-direction: column;
         border: none;
         padding: 0;
+        gap: 1.5rem;
     }
 
     .postcard-right {
@@ -784,8 +836,24 @@ footer {
         /* Hide decorative right side on mobile */
     }
 
-    .postcard {
+    .postcard-left {
         width: 100%;
-        transform: rotate(0);
+    }
+
+    /* ID Badge */
+    .id-badge {
+        width: 100%;
+        max-width: 350px;
+        /* Keep it reasonable */
+    }
+
+    /* General Container */
+    .container {
+        padding: 0 1.5rem;
+    }
+
+    .holes {
+        display: none;
+        /* Hide holes on very small screens to save space */
     }
 }
