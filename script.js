@@ -1,7 +1,41 @@
 document.addEventListener('DOMContentLoaded', () => {
-    console.log('EduKanban Unified Loaded');
+    console.log('Edukanban blog cargado correctamente.');
+    
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
 
-    // Simple intersection observer for reveal animations
+    // Mobile Menu Toggle
+    const burger = document.querySelector('.burger');
+    const nav = document.querySelector('.nav-links');
+    const navLinks = document.querySelectorAll('.nav-links li');
+
+    if(burger){
+        burger.addEventListener('click', () => {
+            // Toggle Nav
+            nav.classList.toggle('nav-active');
+            
+            // Animate Links
+            navLinks.forEach((link, index) => {
+                if (link.style.animation) {
+                    link.style.animation = '';
+                } else {
+                    link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.3}s`;
+                }
+            });
+
+            // Burger Animation
+            burger.classList.toggle('toggle');
+        });
+    }
+
+    // Scroll Animation Observer
     const observerOptions = {
         threshold: 0.2
     };
@@ -9,28 +43,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                entry.target.style.opacity = '1';
-                entry.target.style.transform = 'translateY(0) rotate(0deg)';
-                observer.unobserve(entry.target);
+                entry.target.classList.add('visible');
             }
         });
     }, observerOptions);
 
-    // Animate cards
-    const cards = document.querySelectorAll('.polaroid-card, .sticky-note');
-    cards.forEach((card, index) => {
-        card.style.opacity = '0';
-        card.style.transform = 'translateY(50px)';
-        card.style.transition = `all 0.6s ease ${index * 0.2}s`;
-        observer.observe(card);
-    });
-
-    // Animate text blocks
-    const texts = document.querySelectorAll('.text-block, .hero-content');
-    texts.forEach(text => {
-        text.style.opacity = '0';
-        text.style.transform = 'translateY(20px)';
-        text.style.transition = 'all 0.8s ease';
-        observer.observe(text);
+    document.querySelectorAll('.fade-in, .slide-in-left, .slide-in-right').forEach(el => {
+        observer.observe(el);
     });
 });
