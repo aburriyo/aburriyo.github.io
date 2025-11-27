@@ -23,7 +23,7 @@ La idea central radica en que el sistema educativo actual sufre de una "invisibi
 
 ## 2. Fundamentación Teórica y Propuesta de Investigación
 
-Para validar EduKanban como una metodología robusta y no solo una moda pasajera, es necesario establecer un marco de investigación riguroso. A continuación, se detallan las líneas de investigación y validación propuestas.
+Para validar EduKanban como una metodología robusta, es necesario establecer un marco de investigación riguroso. A continuación, se detallan las líneas de investigación y validación propuestas.
 
 ### 2.1 Hipótesis de Investigación
 > *"La implementación de tableros visuales de flujo (Kanban) en el aula mejora significativamente la autoeficacia percibida por los estudiantes y reduce los tiempos de entrega de asignaciones, en comparación con métodos de gestión tradicionales."*
